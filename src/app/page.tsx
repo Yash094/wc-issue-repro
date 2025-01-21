@@ -34,8 +34,7 @@ export default function Home() {
         <ConnectButton
           client={client}
           chain={baseSepolia}
-          className="px-6 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition-colors duration-200"
-        />
+          />
         
         <button
           onClick={handleLinkProfile}
