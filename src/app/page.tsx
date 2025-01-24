@@ -4,16 +4,22 @@ import { baseSepolia } from "thirdweb/chains";
 import {
   ConnectButton,
 } from "thirdweb/react";
-import { createWallet, linkProfile } from "thirdweb/wallets";
+import { createWallet } from "thirdweb/wallets";
 import { useState } from "react";
 
 export default function Home() {
   const [isLinking, setIsLinking] = useState(false);
+  const {
+    mutate: linkProfile,
+    isPending: isLinking,
+    error: linkError,
+  } = useLinkProfile();
+  console.log(isPending)
 
   const handleLinkProfile = async () => {
     try {
       setIsLinking(true);
-      await linkProfile({
+      linkProfile({
         client,
         strategy: "wallet",
         wallet: createWallet("walletConnect"),
