@@ -6,6 +6,7 @@ import {
 } from "thirdweb/react";
 import { createWallet } from "thirdweb/wallets";
 import { useState } from "react";
+import { useLinkProfile } from "thirdweb/react";
 
 export default function Home() {
   const [isLinking, setIsLinking] = useState(false);
