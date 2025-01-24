@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <main className="min-h-screen p-8 flex flex-col items-center gap-6">
       <h1 className="text-2xl font-bold mb-4">Wallet Connection</h1>
-
+      <h1>{isLinkingMain}</h1>
       <div className="flex flex-col items-center gap-4">
         <ConnectButton
           client={client}
