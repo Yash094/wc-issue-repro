@@ -65,6 +65,7 @@ export default function Home() {
             'Link Profile'
           )}
         </button>
+        <h1>{isLinkingMain}</h1>
       </div>
     </main>
   );
