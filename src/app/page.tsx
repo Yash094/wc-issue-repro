@@ -11,10 +11,10 @@ export default function Home() {
   const [isLinking, setIsLinking] = useState(false);
   const {
     mutate: linkProfile,
-    isPending: isLinking,
+    isPending: isLinkingMain,
     error: linkError,
   } = useLinkProfile();
-  console.log(isPending)
+  console.log(isLinkingMain)
 
   const handleLinkProfile = async () => {
     try {
