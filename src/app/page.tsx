@@ -20,7 +20,7 @@ const WALLET_OPTIONS = [
 type WalletType = (typeof WALLET_OPTIONS)[number]["id"];
 
 export default function Home() {
-  const [selectedWallet, setSelectedWallet] = useState<WalletType>("walletConnect");
+  const [selectedWallet, setSelectedWallet] = useState<WalletType>("io.metamask");
   const [isLinking, setIsLinking] = useState(false);
   const {
     mutate: linkProfile,
