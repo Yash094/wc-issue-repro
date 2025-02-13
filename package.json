@@ -12,7 +12,7 @@
 		"next": "14.1.0",
 		"react": "^18.3",
 		"react-dom": "^18.3",
-		"thirdweb": "5.86.2"
+		"thirdweb": "5.88.4"
 	},
 	"devDependencies": {
 		"@types/node": "^20",
